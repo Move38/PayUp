@@ -189,7 +189,7 @@ void masterLoop() {
   } //winner logic
   else if (currentRank < numPlayers) {
     if (spoonsMode == 1) {
-      winnerDisplayLengthTimer.set(winnerDisplayLength); // TODO This technically isn't winner display timer because it also displays mistakes
+      //winnerDisplayLengthTimer.set(winnerDisplayLength); // TODO This technically isn't winner display timer because it also displays mistakes
     }
     FOREACH_FACE(f) {
       if (!isValueReceivedOnFaceExpired(f) && getSignalState(getLastValueReceivedOnFace(f)) == GO) { // Received next player input
